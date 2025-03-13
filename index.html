@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<!-- Added schema.org RealEstateAgent itemtype and minimal ARIA/schema attributes -->
+<html lang="en" itemscope itemtype="https://schema.org/RealEstateAgent">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title itemprop="name">waso0004 - Midterm Project</title>
+		<script
+			src="https://kit.fontawesome.com/c5f1fd962e.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body role="document">
+		<header role="banner">
+			<!-- Skip links -->
+			<a class="skip-link" href="#main-content">Skip to main content</a>
+			<a class="skip-link" href="#nav-bar">Skip to navigation</a>
+			<a class="skip-link" href="#footer">Skip to footer</a>
+
+			<!-- Navigation bar -->
+			<div class="nav" id="nav-bar">
+				<div class="wrapper">
+					<nav class="nav-bar" role="navigation" aria-label="Main Navigation">
+						<div class="logo">
+							<picture>
+								<source
+									media="(min-width: 900px)"
+									srcset="images/logo-640x.png"
+								/>
+								<source
+									media="(min-width: 700px)"
+									srcset="images/logo-320x.png"
+								/>
+								<img
+									src="images/logo.png"
+									alt="Picture of the Logo"
+									itemprop="logo"
+								/>
+							</picture>
+						</div>
+						<ul>
+							<li>
+								<a class="current" href="index.html">Home</a>
+							</li>
+							<li><a href="#services-section">Service</a></li>
+							<li><a href="agents.html">Agents</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+						<div class="signup">
+							<button type="submit" aria-label="Search">
+								<i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+							</button>
+							<button type="submit" aria-label="Profile">
+								<i class="fa-solid fa-user"></i>
+							</button>
+							<input type="submit" class="button-signup" value="Sign up" />
+						</div>
+					</nav>
+				</div>
+			</div>
+
+			<!-- Banner section -->
+			<div class="banner-img">
+				<div class="banner-wrapper">
+					<div class="banner">
+						<div class="banner-info">
+							<h1>Find Your Dream Home</h1>
+							<p>
+								Explore our curated selection of exquisite properties
+								meticulously tailored to your unique dream home vision
+							</p>
+							<div>
+								<input type="button" class="button-signup" value="Sign up" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main id="main-content" role="main">
+			<!-- Search section -->
+			<div class="search-section" role="search" aria-label="Search section">
+				<div class="wrapper">
+					<div class="search-container">
+						<div class="search-item">
+							<input
+								type="text"
+								id="location-search"
+								placeholder="Location"
+								aria-label="Location"
+							/>
+							<i class="fa-solid fa-location-dot"></i>
+						</div>
+						<div class="search-item">
+							<input
+								type="text"
+								id="type-search"
+								placeholder="Type"
+								aria-label="Type"
+							/>
+							<i class="fa-solid fa-house"></i>
+						</div>
+						<div class="search-item">
+							<input
+								type="text"
+								id="price-search"
+								placeholder="Price Range"
+								aria-label="Price Range"
+							/>
+							<i class="fa-solid fa-dollar-sign"></i>
+						</div>
+						<div class="search-button">
+							<input type="button" class="button-signup" value="Search" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- About us section -->
+			<section
+				class="about-us-section"
+				id="about-us-section"
+				role="region"
+				aria-label="About us section"
+			>
+				<div class="wrapper">
+					<div class="about-content">
+						<div class="about-img">
+							<picture>
+								<source
+									media="(min-width: 900px)"
+									srcset="images/about-us-640x.png"
+								/>
+								<source
+									media="(min-width: 700px)"
+									srcset="images/about-us-320x.png"
+								/>
+								<img
+									src="images/about-us.png"
+									alt="Picture of a luxurious home"
+								/>
+							</picture>
+						</div>
+						<div class="about-info">
+							<h2>We Help You To Find Your Dream Home</h2>
+							<p>
+								From cozy cottages to luxurious estates, our dedicated team
+								guides you through every step of the journey, ensuring your
+								dream home becomes a reality
+							</p>
+							<div class="stats">
+								<div class="stat">
+									<h3>8K+</h3>
+									<p>Houses Available</p>
+								</div>
+								<div class="stat">
+									<h3>6K+</h3>
+									<p>Houses Sold</p>
+								</div>
+								<div class="stat">
+									<h3>2K+</h3>
+									<p>Trusted Agents</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Services section -->
+			<section
+				class="services-section"
+				id="services-section"
+				role="region"
+				aria-label="Services section"
+			>
+				<div class="wrapper">
+					<h2>Why Choose Us</h2>
+					<p>
+						Elevating Your Home Buying Experience with Expertise, Integrity, and
+						Unmatched Personalized Service
+					</p>
+					<div class="service-info">
+						<div class="service-card">
+							<div class="service-icon">
+								<i class="fa-solid fa-location-dot"></i>
+							</div>
+							<h3>Expert Guidance</h3>
+							<p>
+								Benefit from our team's seasoned expertise for a smooth buying
+								experience
+							</p>
+						</div>
+
+						<div class="service-card">
+							<div class="service-icon">
+								<i class="fa-solid fa-user-pen"></i>
+							</div>
+							<h3>Personalized Service</h3>
+							<p>
+								Our services adapt to your unique needs, making your journey
+								stress-free
+							</p>
+						</div>
+
+						<div class="service-card">
+							<div class="service-icon">
+								<i class="fa-solid fa-file-contract"></i>
+							</div>
+							<h3>Transparent Process</h3>
+							<p>
+								Stay informed with our clear and honest approach to buying your
+								home
+							</p>
+						</div>
+
+						<div class="service-card">
+							<div class="service-icon">
+								<i class="fa-solid fa-handshake"></i>
+							</div>
+							<h3>Exceptional Support</h3>
+							<p>
+								Providing peace of mind with our responsive and attentive
+								customer service
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Popular residences section -->
+			<section
+				class="popular-residences"
+				role="region"
+				aria-label="Popular residences"
+			>
+				<div class="wrapper">
+					<h2>Our Popular Residences</h2>
+					<div class="residences-info">
+						<div class="residence-card" itemscope itemtype="https://schema.org/Residence">
+							<picture>
+								<source
+									media="(min-width: 900px)"
+									srcset="images/residence1-960x.png"
+								/>
+								<source
+									media="(min-width: 700px)"
+									srcset="images/residence1-480x.png"
+								/>
+								<img
+									src="images/residence1.png"
+									alt="San Francisco Residence"
+									itemprop="image"
+								/>
+							</picture>
+							<div class="residence-details">
+								<h3 itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+									<i class="fa-solid fa-location-dot"></i>
+									<span itemprop="addressLocality">San Francisco, California</span>
+								</h3>
+								<p><i class="fa-solid fa-bed"></i> 4 Rooms</p>
+								<p>
+									<i class="fa-solid fa-ruler-combined"></i>
+									3,500 sq ft
+								</p>
+								<p class="price" itemprop="price" content="2500000">$2,500,000</p>
+								<button class="button-signup">Sign up</button>
+							</div>
+						</div>
+						<div class="residence-card" itemscope itemtype="https://schema.org/Residence">
+							<picture>
+								<source
+									media="(min-width: 900px)"
+									srcset="images/residence2-960x.png"
+								/>
+								<source
+									media="(min-width: 700px)"
+									srcset="images/residence2-480x.png"
+								/>
+								<img
+								src="images/residence2.png"
+								alt="Beverly Hills Residence"
+								itemprop="image"
+								/>
+							</picture>
+							<div class="residence-details">
+								<h3 itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+									<i class="fa-solid fa-location-dot"></i>
+									<span itemprop="addressLocality">Beverly Hills, California</span>
+								</h3>
+								<p><i class="fa-solid fa-bed"></i> 3 Rooms</p>
+								<p>
+									<i class="fa-solid fa-ruler-combined"></i>
+									1,500 sq ft
+								</p>
+								<p class="price" itemprop="price" content="850000">$850,000</p>
+								<button class="button-signup">Sign up</button>
+							</div>
+						</div>
+						<div class="residence-card" itemscope itemtype="https://schema.org/Residence">
+							<picture>
+								<source
+									media="(min-width: 900px)"
+									srcset="images/residence3-960x.png"
+								/>
+								<source
+									media="(min-width: 700px)"
+									srcset="images/residence3-480x.png"
+								/>
+								<img
+								src="images/residence3.png"
+								alt="Palo Alto Residence"
+								itemprop="image"
+								/>
+							</picture>
+
+							<div class="residence-details">
+								<h3 itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+									<i class="fa-solid fa-location-dot"></i>
+									<span itemprop="addressLocality">Palo Alto, California</span>
+								</h3>
+								<p><i class="fa-solid fa-bed"></i> 6 Rooms</p>
+								<p>
+									<i class="fa-solid fa-ruler-combined"></i>
+									4,000 sq ft
+								</p>
+								<p class="price" itemprop="price" content="3700000">$3,700,000</p>
+								<button class="button-signup">Sign up</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Testimonials section -->
+			<section
+				class="testimonials-section"
+				id="testimonials-section"
+				role="region"
+				aria-label="Testimonials section"
+			>
+				<div class="wrapper">
+					<h2>What People Say About Dwello</h2>
+					<div class="testimonials-container">
+						<div class="testimonial-card">
+							<picture>
+								<source
+									media="(min-width: 900px)"
+									srcset="images/testimonial1-640x.png"
+								/>
+								<source
+									media="(min-width: 700px)"
+									srcset="images/testimonial1-320x.png"
+								/>
+								<img src="images/testimonial1.png" alt="luxurious room 1" />
+							</picture>
+							<div class="testimonial-info">
+								<div class="t-picture">
+									<picture>
+										<source
+											media="(min-width: 900px)"
+											srcset="images/sarah-nguyen-960x.png"
+										/>
+										<source
+											media="(min-width: 700px)"
+											srcset="images/sarah-nguyen-480x.png"
+										/>
+										<img
+											src="images/sarah-nguyen.png"
+											alt="Picture of Sarah Nguyen"
+										/>
+									</picture>
+								</div>
+								<div class="t-name">
+									<h3>Sarah Nguyen</h3>
+								</div>
+								<div class="t-location">
+									<p>San Francisco</p>
+								</div>
+								<div class="rating">
+									<p><i class="fa-solid fa-star"></i> 5.0</p>
+								</div>
+								<div class="testimonials">
+									<p>
+										Dwello truly cares about their clients. They listened to my
+										needs and preferences and helped me find the perfect home in
+										the Bay Area. Their professionalism and attention to detail
+										are unmatched.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="testimonial-card">
+							<picture>
+								<source
+									media="(min-width: 900px)"
+									srcset="images/testimonial2-640x.png"
+								/>
+								<source
+									media="(min-width: 700px)"
+									srcset="images/testimonial2-320x.png"
+								/>
+								<img src="images/testimonial2.png" alt="luxurious room 2" />
+							</picture>
+							<div class="testimonial-info">
+								<div class="t-picture">
+									<picture>
+										<source
+											media="(min-width: 900px)"
+											srcset="images/michael-rodriguez-960x.png"
+										/>
+										<source
+											media="(min-width: 700px)"
+											srcset="images/michael-rodriguez-480x.png"
+										/>
+										<img
+											src="images/michael-rodriguez.png"
+											alt="Picture of Michael Rodriguez"
+										/>
+									</picture>
+								</div>
+								<div class="t-name">
+									<h3>Michael Rodriguez</h3>
+								</div>
+								<div class="t-location">
+									<p>San Diego</p>
+								</div>
+								<div class="rating">
+									<p><i class="fa-solid fa-star"></i> 4.5</p>
+								</div>
+								<div class="testimonials">
+									<p>
+										I had a fantastic experience working with Dwello. Their
+										expertise and personalized service exceeded my expectations.
+										I found my dream home quickly and smoothly. Highly
+										recommended!
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="testimonial-card">
+							<picture>
+								<source
+									media="(min-width: 900px)"
+									srcset="images/testimonial3-640x.png"
+								/>
+								<source
+									media="(min-width: 700px)"
+									srcset="images/testimonial3-320x.png"
+								/>
+								<img src="images/testimonial3.png" alt="luxurious room 3" />
+							</picture>
+							<div class="testimonial-info">
+								<div class="t-picture">
+									<picture>
+										<source
+											media="(min-width: 900px)"
+											srcset="images/emily-johnson-960x.png"
+										/>
+										<source
+											media="(min-width: 700px)"
+											srcset="images/emily-johnson-480x.png"
+										/>
+										<img
+											src="images/emily-johnson.png"
+											alt="Picture of Emily Johnson"
+										/>
+									</picture>
+								</div>
+								<div class="t-name">
+									<h3>Emily Johnson</h3>
+								</div>
+								<div class="t-location">
+									<p>Los Angeles</p>
+								</div>
+								<div class="rating">
+									<p><i class="fa-solid fa-star"></i> 5.0</p>
+								</div>
+								<div class="testimonials">
+									<p>
+										Dwello made my dream of owning a home a reality! Their team
+										provided exceptional support and guided me through every
+										step of the process. I couldn't be happier with my new home!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="carousel-controls"
+						role="region"
+						aria-label="Testimonial navigation controls"
+					>
+						<button class="prev" aria-label="Previous testimonial">
+							<i class="fa-solid fa-chevron-left"></i>
+						</button>
+						<button class="next" aria-label="Next testimonial">
+							<i class="fa-solid fa-chevron-right"></i>
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- Questions section -->
+			<section class="questions-section" role="region" aria-label="Questions section">
+				<div class="wrapper">
+					<h2>Do You Have Any Questions? Get Help From Us</h2>
+					<div class="help-options">
+						<div class="help-option">
+							<i class="fa-solid fa-circle-check"></i>
+							<p>Chat live with our support team</p>
+						</div>
+						<div class="help-option">
+							<i class="fa-solid fa-circle-check"></i>
+							<p>Browse our FAQ</p>
+						</div>
+					</div>
+					<div class="email-subscription">
+						<form action="#" role="form" aria-label="Email subscription form">
+							<div class="email-input">
+								<input
+									type="email"
+									placeholder="&#9993; Enter your email address..."
+									aria-label="Email address"
+								/>
+							</div>
+							<button type="submit" aria-label="Submit email">Submit</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer id="footer" role="contentinfo">
+			<!-- Footer section -->
+			<div class="wrapper">
+				<div class="footer-container">
+					<div class="footer-column">
+						<img
+							src="images/logo.png"
+							alt="Dwello Logo"
+							itemprop="logo"
+						/>
+						<p>Bringing you closer to your dream home, one click at a time.</p>
+					</div>
+					<div class="footer-column">
+						<h3>About</h3>
+						<ul>
+							<li><a href="#">Our Story</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Our Team</a></li>
+							<li><a href="#">Resources</a></li>
+						</ul>
+					</div>
+					<div class="footer-column">
+						<h3>Support</h3>
+						<ul>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">Help Center</a></li>
+							<li><a href="#">Terms of Service</a></li>
+						</ul>
+					</div>
+					<div class="footer-column">
+						<h3>Find Us</h3>
+						<ul>
+							<li><a href="#">Events</a></li>
+							<li><a href="#">Locations</a></li>
+							<li><a href="#">Newsletter</a></li>
+						</ul>
+					</div>
+					<div class="footer-column">
+						<h3>Our Social</h3>
+						<ul>
+							<li>
+								<a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+							</li>
+							<li>
+								<a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+							</li>
+							<li>
+								<a href="#"><i class="fa-brands fa-twitter"></i> Twitter (x)</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
