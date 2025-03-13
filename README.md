@@ -1,7 +1,8 @@
 # MTM6201 Midterm
 
-**Template used:**  
-## Find Your Dream Home Website  
+## Template used ##
+
+**Find Your Dream Home Website**  
 
 **Author:** DS CODE  
 
