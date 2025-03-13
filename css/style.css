@@ -1,0 +1,299 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ----------------------------------------------CSS START---------------------------------------------- */
+
+:root {
+    --primary-color: #3d2b1f;
+    --secondary-color: #c78c06;
+    --background-color: #f9f5f2;
+    --text-color: #fff;
+}
+
+/* General Reset and Box Sizing */
+* {
+    box-sizing: border-box;
+}
+
+button {
+    background: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.button-signup {
+    cursor: pointer;
+}
+
+.button-signup:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Body (Global Font Family) */
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Headings (h1 to h5) Styles */
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+}
+
+/* Individual Heading Styles */
+h1 {
+    font-size: 4rem;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+h3 {
+    font-size: 2rem;
+    padding: 20px 0 10px 0;
+}
+
+h4 {
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 1rem;
+    line-height: 1.3;
+    padding: 10px 0 10px 0;
+}
+
+/* Wrapper (General Layout Container) */
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    height: auto;
+    padding: 20px;
+}
+
+/* Navigation Bar Styles */
+
+.nav-info {
+    background-color: var(--background-color);
+}
+
+
+.nav-bar ul {
+    flex-direction: column;
+    text-align: center;
+}
+
+.nav-bar ul li {
+    padding: 10px 0;
+}
+
+.nav-bar ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+.nav-bar ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.signup {
+    margin-left: 20px;
+}
+
+button:hover {
+    color: var(--secondary-color);
+}
+
+/* Banner Section */
+.banner {
+    background-color: var(--background-color);
+}
+
+.banner .wrapper{
+    background-image: url('../images/hero-image.png');
+    background-position: right;
+    background-color: var(--background-color);
+    background-repeat: no-repeat;
+    height: 110vh;
+    padding-top: 50px;
+}
+
+.banner-info {
+    max-width: 50%;
+}
+
+.banner-info h1 {
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+.banner-info p {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin: 20px 0;
+}
+
+.banner-image {
+    max-width: 50%;
+}
+
+.banner-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.button-signup {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Responsive Styles for Screens with a Min Width of 760px */
+@media screen and (min-width: 760px) {
+    /* Header Section */
+    .logo {
+        float: left;
+        padding: 0;
+    }
+
+    .logo img {
+        height: auto;
+        width: 80px;
+    }
+
+    .nav-bar {
+        justify-content: space-between;
+    }
+
+    .nav-bar,
+    .nav-bar ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-bar ul {
+        flex-direction: row;
+        column-gap: 30px;
+        margin: 0 20px 0 20px;
+        transition: 1s;
+    }
+
+    /* Hero Banner Section */
+
+    .banner-info h1 {
+        transition: 1s;
+    }
+
+    /* About Us Section */
+    .about-us-section .about-img {
+        height: auto;
+        width: 50%;
+    }
+
+    .about-us-section .wrapper {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about-us-section .about-info {
+        width: 50%;
+        padding-left: 20px;
+    }
+
+    /* Services Section */
+    .services-section h3 {
+        font-size: 1.25em;
+        transition: 1s;
+    }
+
+    .services-section .wrapper .service-info {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+}
+
+/* Responsive Styles for Screens with a Min Width of 1200px */
+@media screen and (min-width: 1200px) {
+    .services-section h3 {
+        font-size: 2rem;
+        transition: 1s;
+    }
+
+    .nav-bar ul {
+        transition: 1s;
+        column-gap: 100px;
+    }
+
+    .banner .banner-border {
+        margin: 0 auto;
+        max-width: 1240px;
+    }
+
+    .banner-info h1 {
+        transition: 1s;
+        font-size: 4em;
+    }
+}
