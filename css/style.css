@@ -209,7 +209,7 @@ button:hover {
 .banner-img {
 	max-width: 1200px;
 	padding-top: 120px;
-	background: url("/images/hero-image.png") no-repeat;
+	background: url("../images/hero-image.png") no-repeat;
 	background-position: calc(100% + 100px) center;
 	background-size: 75%;
 	margin: 0 auto;
