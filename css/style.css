@@ -879,6 +879,7 @@ button:hover {
 }
 
 .a-name h2 {
+	text-align: left;
 	font-size: 1.2rem;
 	color: var(--primary-color);
 }
