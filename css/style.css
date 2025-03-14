@@ -791,7 +791,6 @@ button:hover {
 
 .email-input input[type="email"] {
 	padding: 15px 20px;
-	margin-right: 10px;
 	border: none;
 	border-radius: 10px;
 	font-size: 1rem;
@@ -799,7 +798,7 @@ button:hover {
 	background-color: var(--secondary-background-color);
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	color: var(--primary-color);
-	width: 250px;
+	width: 200px;
 }
 
 .email-input input[type="email"]::placeholder {
@@ -1108,6 +1107,10 @@ footer {
 	.banner-img {
 		background-position: calc(100% + 40px) center;
 		background-size: 75%;
+	}
+
+	.email-input input[type="email"] {
+		margin-right: 10px;
 	}
 
 	/* Footer Section */
