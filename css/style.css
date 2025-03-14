@@ -799,7 +799,7 @@ button:hover {
 	background-color: var(--secondary-background-color);
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	color: var(--primary-color);
-	width: 300px;
+	width: 250px;
 }
 
 .email-input input[type="email"]::placeholder {
